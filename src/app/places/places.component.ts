@@ -11,8 +11,8 @@ export class PlacesComponent implements OnInit {
 
   constructor() { }
   places:placeInterface[];
+  searchText;
   ngOnInit(): void {
     this.places = placesData;
   }
-
 }

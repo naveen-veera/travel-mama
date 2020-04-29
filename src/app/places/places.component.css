@@ -1,3 +1,66 @@
+/* .categories{
+  border:1px solid black;
+} */
+.cat{
+  height: 40px;
+  width: 10%;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 0px;
+  background: black;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+.item{
+  margin-bottom: 5px;
+  border:1px solid black;
+  background: black;
+  color: white;
+  /* text-align: center; */
+  border-radius: 5px;
+  /* padding:-5px; */
+  height: 50px;
+  width: 93%;
+  margin: 5px;
+}
+.item:hover {
+  box-shadow: 0 12px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgb(18, 15, 27);
+  color: white;
+}   
+.search-container {
+  float: right;
+  border:1px solid black;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: white;
+  height: 30px;
+  width: 31%;
+  font-size: 1.3em;
+}
+input{
+width: 90%;
+font-size: .9em;
+margin-left: 3px;
+}
+input:focus{
+outline: 0;
+}
+.fa-search{
+cursor: pointer;
+font-size: 1.5em;
+}
+.search-icon,
+input{
+margin-top: 3px;
+border:1px solid transparent;
+border-radius: 10px;
+background-color: white;
+}
+
 /* .bg {
     background-image: url("../../assets/homeWallpaper.jpg");
     height: 100%; 
@@ -43,8 +106,7 @@
     text-align: center;
   }
 
-  
-  .read:hover {
+  button:hover {
     box-shadow: 0 12px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color:  rgb(18, 15, 27);
     color: white;
@@ -53,10 +115,16 @@
   button:focus{
       outline: 0;
   }
+
   .list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     margin: 20px;
+      /* border:1px solid black; */
+  }
+  .page{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
   }
   
