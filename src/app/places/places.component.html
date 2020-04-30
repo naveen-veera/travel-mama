@@ -1,12 +1,14 @@
 <div class="top">
     <button class="cat" mat-button [matMenuTriggerFor]="menu">Categories</button>
     <mat-menu #menu="matMenu">
-      <button class='item' mat-menu-item>Historical</button>
-      <button class='item' mat-menu-item>Ecotourism</button>
-      <button class='item' mat-menu-item>Devotional</button>
-      <button class='item' mat-menu-item>Cultural</button>
-      <button class='item' mat-menu-item>Snow</button>
-      <button class='item' mat-menu-item>Adventure</button>
+      <button class='item' (click)="setValue('historical')" mat-menu-item>Historical</button>
+      <button class='item' (click)="setValue('Ecotourism')" mat-menu-item>Ecotourism</button>
+      <button class='item' (click)="setValue('Devotional')" mat-menu-item>Devotional</button>
+      <button class='item' (click)="setValue('Cultural')" mat-menu-item>Cultural</button>
+      <button class='item' (click)="setValue('Snow')" mat-menu-item>Snow</button>
+      <button class='item' (click)="setValue('hill')" mat-menu-item>Hills</button>
+      <button class='item' (click)="setValue('landscape')" mat-menu-item>Landscape</button>
+      <button class='item' (click)="setValue('Adventure')" mat-menu-item>Adventure</button>
     </mat-menu>
     
   <div class="search-container">
