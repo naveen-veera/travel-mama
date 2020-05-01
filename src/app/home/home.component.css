@@ -1,3 +1,12 @@
+.title {
+  /* border: 1px solid white; */
+  padding: 25px;
+  font-size: 40px;
+  font-family: cursive;
+  color: white;
+  /* width:100%; */
+}
+
 .search-container {
     float: right;
     /* border:1px solid black; */
@@ -52,7 +61,7 @@ input{
   }
   .btn {
       position: absolute;
-      top: 60%;
+      top: 70%;
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);

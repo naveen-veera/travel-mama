@@ -1,28 +1,45 @@
+<header>
+  <h1 class="title">Travel Mama</h1>
+  <form class="search-container">
+    <input type="text" name="search" placeholder="Search.." [(ngModel)]="searchText">
+  </form>
+</header>
+<div class="bg">
 <div class="top">
     <button class="cat" mat-button [matMenuTriggerFor]="menu">Categories</button>
     <mat-menu #menu="matMenu">
-      <button class='item' (click)="setValue('historical')" mat-menu-item>Historical</button>
+      <button class='item' (click)="setValue('Historical')" mat-menu-item>Historical</button>
       <button class='item' (click)="setValue('Ecotourism')" mat-menu-item>Ecotourism</button>
       <button class='item' (click)="setValue('Devotional')" mat-menu-item>Devotional</button>
-      <button class='item' (click)="setValue('Cultural')" mat-menu-item>Cultural</button>
+      <button class='item' (click)="setValue('Beautiful')" mat-menu-item>Beautiful</button>
       <button class='item' (click)="setValue('Snow')" mat-menu-item>Snow</button>
       <button class='item' (click)="setValue('hill')" mat-menu-item>Hills</button>
       <button class='item' (click)="setValue('landscape')" mat-menu-item>Landscape</button>
       <button class='item' (click)="setValue('Adventure')" mat-menu-item>Adventure</button>
     </mat-menu>
-    
-  <div class="search-container">
-    <input type="text" placeholder=" Search Here..." name="search" [(ngModel)]="searchText">
-    <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
-  </div>  
 </div>
+
 <div class="page">
-    <ul class='list'>
-        <li class="grid" *ngFor='let place of places | filter: searchText'>
-          <img src="{{place.image}}" alt="">
-          <h2>{{place.name}}</h2>
-          <p>{{place.story}}</p>
-          <a href="{{place.url}}"><button class='read'>View More</button></a>
-        </li>
+    <ul class='list'>      
+      <li class="grid" *ngFor='let place of places | filter: searchText'>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{place.name}}</mat-card-title>
+            <mat-card-subtitle>{{place.category}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{place.image}}" alt="place image">
+          <mat-card-content>
+            <p>{{place.story}}</p>
+          </mat-card-content>
+          <a href="{{place.url}}"><button class="read" mat-button>Read More</button></a>
+        </mat-card>
+      </li>
     </ul>
 </div>
+</div>
+<footer>
+  <h3>AboutUs</h3>
+  <h3>ContactUs</h3>
+  <p>Made With <img class='love' src='../../assets/Vector.svg'> By ProGrad</p>
+</footer>
