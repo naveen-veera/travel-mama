@@ -141,7 +141,7 @@ export const placesData:placeInterface[]=[
     {
         image:'../../assets/Flyboarding_5-1.jpg',
         name:"Flyboarding",
-        story:'What if we said that you could fly upon Air like a Superhero and swim like a Dolphin within a span of minutes? Would you believe us? No! Well, as incredible as it sounds, it\'s possible and that too in your very own Goa. Welcome to Flyboarding, people! A comparatively newer innovation ...',
+        story:'What if we said that you could fly upon Air like a Superhero and swim like a Dolphin within a span of minutes? Would you believe us? No! Well, as incredible as it sounds, it\'s possible and that too in your very own Goa. Welcome to Flyboarding, people! A comparatively newer ...',
         url:'https://tripraja.com/tour/flyboarding-in-goa/',
         category:'Adventure'
     },
